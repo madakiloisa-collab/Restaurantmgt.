@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payments | Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="desktop-logo logo">
+          <h1>Restaurant</h1>
+          <p>Management System</p>
+        </div>
+
+        <div class="mobile-sidebar-header">
+          <div class="mobile-logo">
+            <h1>Restaurant</h1>
+            <p>Management System</p>
+          </div>
+
+          <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <span>⌂</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="orders.html">
+                <span>▤</span>
+                Orders
+              </a>
+            </li>
+
+            <li>
+              <a href="tables.html">
+                <span>▦</span>
+                Tables
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>☷</span>
+                Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="inventory.html">
+                <span>▥</span>
+                Inventory
+              </a>
+            </li>
+
+            <li>
+              <a href="staff.html">
+                <span>♙</span>
+                Staff
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="payments.html">
+                <span>₦</span>
+                Payments
+              </a>
+            </li>
+
+            <li>
+              <a href="reports.html">
+                <span>◫</span>
+                Reports
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="settings.html">
+            <span>⚙</span>
+            Settings
+          </a>
+
+          <a href="#">
+            <span>↪</span>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="header-title">
+            <h2>Payments</h2>
+            <p>Track restaurant payments and financial transactions.</p>
+          </div>
+
+          <div class="header-right">
+            <button class="notification-button">♢</button>
+
+            <div class="admin-profile">
+              <div class="admin-avatar">AD</div>
+
+              <div>
+                <h4>Paul</h4>
+                <p>Administrator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="payment-summary">
+          <div class="payment-summary-card">
+            <span>Today's Revenue</span>
+            <strong>₦1,024,500</strong>
+            <p>Revenue recorded today</p>
+          </div>
+
+          <div class="payment-summary-card">
+            <span>Cash Payments</span>
+            <strong>₦286,500</strong>
+            <p>28% of today's revenue</p>
+          </div>
+
+          <div class="payment-summary-card">
+            <span>Card Payments</span>
+            <strong>₦348,000</strong>
+            <p>34% of today's revenue</p>
+          </div>
+
+          <div class="payment-summary-card">
+            <span>Transfer Payments</span>
+            <strong>₦390,000</strong>
+            <p>38% of today's revenue</p>
+          </div>
+        </section>
+
+        <section class="payments-page">
+          <div class="section-header">
+            <div>
+              <h2>Payment Transactions</h2>
+              <p>Recent payments received from customers.</p>
+            </div>
+          </div>
+
+          <div class="payment-filters">
+            <button class="payment-filter active">All Payments</button>
+
+            <button class="payment-filter">Cash</button>
+
+            <button class="payment-filter">Card</button>
+
+            <button class="payment-filter">Transfer</button>
+          </div>
+
+          <div class="payments-table-wrapper">
+            <table class="payments-table">
+              <thead>
+                <tr>
+                  <th>Transaction</th>
+                  <th>Order</th>
+                  <th>Customer</th>
+                  <th>Method</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Time</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>PAY-00982</td>
+                  <td>#1186</td>
+                  <td>Sammy</td>
+                  <td><span class="payment-method cash">Cash</span></td>
+                  <td>₦12,000</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>10:42 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00981</td>
+                  <td>#1185</td>
+                  <td>Danielle</td>
+                  <td><span class="payment-method transfer">Transfer</span></td>
+                  <td>₦14,000</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>10:35 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00980</td>
+                  <td>#1184</td>
+                  <td>Jason</td>
+                  <td><span class="payment-method card">Card</span></td>
+                  <td>₦11,500</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>10:28 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00979</td>
+                  <td>#1183</td>
+                  <td>Kirah</td>
+                  <td><span class="payment-method transfer">Transfer</span></td>
+                  <td>₦10,500</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>10:16 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00978</td>
+                  <td>#1182</td>
+                  <td>Michel</td>
+                  <td><span class="payment-method cash">Cash</span></td>
+                  <td>₦9,500</td>
+                  <td><span class="payment-status pending">Pending</span></td>
+                  <td>10:02 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00977</td>
+                  <td>#1181</td>
+                  <td>Olivia</td>
+                  <td><span class="payment-method card">Card</span></td>
+                  <td>₦13,000</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>9:48 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00976</td>
+                  <td>#1180</td>
+                  <td>James</td>
+                  <td><span class="payment-method transfer">Transfer</span></td>
+                  <td>₦9,500</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>9:36 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00975</td>
+                  <td>#1179</td>
+                  <td>Lara</td>
+                  <td><span class="payment-method cash">Cash</span></td>
+                  <td>₦12,500</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>9:21 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00974</td>
+                  <td>#1178</td>
+                  <td>Nathan</td>
+                  <td><span class="payment-method transfer">Transfer</span></td>
+                  <td>₦13,500</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>9:08 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00973</td>
+                  <td>#1177</td>
+                  <td>Rebecca</td>
+                  <td><span class="payment-method card">Card</span></td>
+                  <td>₦13,000</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>8:54 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00972</td>
+                  <td>#1176</td>
+                  <td>Anita</td>
+                  <td><span class="payment-method cash">Cash</span></td>
+                  <td>₦15,500</td>
+                  <td><span class="payment-status pending">Pending</span></td>
+                  <td>8:42 AM</td>
+                </tr>
+
+                <tr>
+                  <td>PAY-00971</td>
+                  <td>#1175</td>
+                  <td>Cassidy</td>
+                  <td><span class="payment-method transfer">Transfer</span></td>
+                  <td>₦11,000</td>
+                  <td><span class="payment-status paid">Paid</span></td>
+                  <td>8:30 AM</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="payment-methods">
+          <div class="section-header">
+            <div>
+              <h2>Payment Methods</h2>
+              <p>Today's payment distribution.</p>
+            </div>
+          </div>
+
+          <div class="payment-method-grid">
+            <div class="payment-method-card">
+              <div class="payment-method-icon">₦</div>
+
+              <div>
+                <h3>Cash</h3>
+                <p>28% of revenue</p>
+              </div>
+
+              <strong>₦286,500</strong>
+            </div>
+
+            <div class="payment-method-card">
+              <div class="payment-method-icon">▣</div>
+
+              <div>
+                <h3>Card</h3>
+                <p>34% of revenue</p>
+              </div>
+
+              <strong>₦348,000</strong>
+            </div>
+
+            <div class="payment-method-card">
+              <div class="payment-method-icon">↗</div>
+
+              <div>
+                <h3>Bank Transfer</h3>
+                <p>38% of revenue</p>
+              </div>
+
+              <strong>₦390,000</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

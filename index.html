@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="desktop-logo logo">
+          <h1>Restaurant</h1>
+          <p>Management System</p>
+        </div>
+
+        <div class="mobile-sidebar-header">
+          <div class="mobile-logo">
+            <h1>Restaurant</h1>
+            <p>Management System</p>
+          </div>
+
+          <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li class="active">
+              <a href="index.html">
+                <span>⌂</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="orders.html">
+                <span>▤</span>
+                Orders
+              </a>
+            </li>
+
+            <li>
+              <a href="tables.html">
+                <span>▦</span>
+                Tables
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>☷</span>
+                Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="inventory.html">
+                <span>▥</span>
+                Inventory
+              </a>
+            </li>
+
+            <li>
+              <a href="staff.html">
+                <span>♙</span>
+                Staff
+              </a>
+            </li>
+
+            <li>
+              <a href="payments.html">
+                <span>₦</span>
+                Payments
+              </a>
+            </li>
+
+            <li>
+              <a href="reports.html">
+                <span>◫</span>
+                Reports
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="settings.html">
+            <span>⚙</span>
+            Settings
+          </a>
+
+          <a href="#">
+            <span>↪</span>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="header-title">
+            <h2>Dashboard</h2>
+
+            <p>Here's what's happening in your restaurant today.</p>
+          </div>
+
+          <div class="header-right">
+            <button class="notification-button">♢</button>
+
+            <div class="admin-profile">
+              <div class="admin-avatar">AD</div>
+
+              <div>
+                <h4>Paul</h4>
+                <p>Administrator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="stats">
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <h3>Today's Revenue</h3>
+              <span>₦</span>
+            </div>
+
+            <div class="stat-number">₦1,024,500</div>
+
+            <div class="stat-description">Revenue generated today</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <h3>Today's Orders</h3>
+              <span>▤</span>
+            </div>
+
+            <div class="stat-number">78</div>
+
+            <div class="stat-description">
+              34 online • 28 walk-in • 16 delivery
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <h3>Occupied Tables</h3>
+              <span>▦</span>
+            </div>
+
+            <div class="stat-number">24 / 36</div>
+
+            <div class="stat-description">8 available • 4 reserved</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-card-top">
+              <h3>Inventory Items</h3>
+              <span>▥</span>
+            </div>
+
+            <div class="stat-number">64</div>
+
+            <div class="stat-description">15 low stock • 4 out of stock</div>
+          </div>
+        </section>
+
+        <section class="dashboard-grid">
+          <div class="dashboard-section">
+            <div class="section-header">
+              <div>
+                <h2>Recent Orders</h2>
+                <p>A quick look at today's latest orders.</p>
+              </div>
+
+              <a href="orders.html"> View All → </a>
+            </div>
+
+            <div class="dashboard-orders">
+              <div class="dashboard-order">
+                <div>
+                  <strong>#1186</strong>
+                  <p>Sammy • Online</p>
+                </div>
+
+                <div>
+                  <strong>₦12,500</strong>
+                  <span class="status completed"> Completed </span>
+                </div>
+              </div>
+
+              <div class="dashboard-order">
+                <div>
+                  <strong>#1185</strong>
+                  <p>Danielle • Delivery</p>
+                </div>
+
+                <div>
+                  <strong>₦18,500</strong>
+                  <span class="status preparing"> Preparing </span>
+                </div>
+              </div>
+
+              <div class="dashboard-order">
+                <div>
+                  <strong>#1184</strong>
+                  <p>Jason • Walk-in</p>
+                </div>
+
+                <div>
+                  <strong>₦9,500</strong>
+                  <span class="status completed"> Completed </span>
+                </div>
+              </div>
+
+              <div class="dashboard-order">
+                <div>
+                  <strong>#1183</strong>
+                  <p>Kirah • Online</p>
+                </div>
+
+                <div>
+                  <strong>₦21,000</strong>
+                  <span class="status pending"> Pending </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section">
+            <div class="section-header">
+              <div>
+                <h2>Inventory</h2>
+                <p>Items that need attention.</p>
+              </div>
+
+              <a href="inventory.html"> View All → </a>
+            </div>
+
+            <div class="dashboard-inventory">
+              <div class="dashboard-inventory-item">
+                <div>
+                  <strong>Cooking Gas</strong>
+                  <p>6 kg remaining</p>
+                </div>
+
+                <span class="inventory-status low-stock"> Low </span>
+              </div>
+
+              <div class="dashboard-inventory-item">
+                <div>
+                  <strong>Chicken</strong>
+                  <p>18 kg remaining</p>
+                </div>
+
+                <span class="inventory-status low-stock"> Low </span>
+              </div>
+
+              <div class="dashboard-inventory-item">
+                <div>
+                  <strong>Onions</strong>
+                  <p>7 kg remaining</p>
+                </div>
+
+                <span class="inventory-status low-stock"> Low </span>
+              </div>
+
+              <div class="dashboard-inventory-item">
+                <div>
+                  <strong>Backup Gas</strong>
+                  <p>0 kg remaining</p>
+                </div>
+
+                <span class="inventory-status out-stock"> Out </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section dashboard-wide">
+            <div class="section-header">
+              <div>
+                <h2>Tables</h2>
+                <p>Current restaurant table status.</p>
+              </div>
+
+              <a href="tables.html"> Manage Tables → </a>
+            </div>
+
+            <div class="dashboard-table-grid">
+              <div class="dashboard-table available">
+                <strong>T01</strong>
+                <span>Available</span>
+              </div>
+
+              <div class="dashboard-table occupied">
+                <strong>T02</strong>
+                <span>Occupied</span>
+              </div>
+
+              <div class="dashboard-table occupied">
+                <strong>T03</strong>
+                <span>Occupied</span>
+              </div>
+
+              <div class="dashboard-table reserved">
+                <strong>T04</strong>
+                <span>Reserved</span>
+              </div>
+
+              <div class="dashboard-table occupied">
+                <strong>T05</strong>
+                <span>Occupied</span>
+              </div>
+
+              <div class="dashboard-table available">
+                <strong>T06</strong>
+                <span>Available</span>
+              </div>
+
+              <div class="dashboard-table occupied">
+                <strong>T07</strong>
+                <span>Occupied</span>
+              </div>
+
+              <div class="dashboard-table occupied">
+                <strong>T08</strong>
+                <span>Occupied</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section">
+            <div class="section-header">
+              <div>
+                <h2>Menu</h2>
+                <p>Popular items from today's menu.</p>
+              </div>
+
+              <a href="menu.html"> View Menu → </a>
+            </div>
+
+            <div class="dashboard-menu-list">
+              <div class="dashboard-menu-item">
+                <div>
+                  <strong>Jollof Rice</strong>
+                  <p>Rice & Meals</p>
+                </div>
+
+                <strong>₦3,500</strong>
+              </div>
+
+              <div class="dashboard-menu-item">
+                <div>
+                  <strong>Grilled Chicken</strong>
+                  <p>Proteins</p>
+                </div>
+
+                <strong>₦5,000</strong>
+              </div>
+
+              <div class="dashboard-menu-item">
+                <div>
+                  <strong>Chicken Shawarma</strong>
+                  <p>Shawarma</p>
+                </div>
+
+                <strong>₦4,500</strong>
+              </div>
+
+              <div class="dashboard-menu-item">
+                <div>
+                  <strong>Chicken Pizza</strong>
+                  <p>Pizza</p>
+                </div>
+
+                <strong>₦8,000</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section">
+            <div class="section-header">
+              <div>
+                <h2>Staff</h2>
+                <p>Current staff availability.</p>
+              </div>
+
+              <a href="staff.html"> View Staff → </a>
+            </div>
+
+            <div class="dashboard-staff">
+              <div class="dashboard-staff-stat">
+                <strong>22</strong>
+                <span>Total Staff</span>
+              </div>
+
+              <div class="dashboard-staff-stat">
+                <strong>14</strong>
+                <span>On Duty</span>
+              </div>
+
+              <div class="dashboard-staff-stat">
+                <strong>6</strong>
+                <span>Off Duty</span>
+              </div>
+
+              <div class="dashboard-staff-stat">
+                <strong>2</strong>
+                <span>On Leave</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section">
+            <div class="section-header">
+              <div>
+                <h2>Payments</h2>
+                <p>Today's payment breakdown.</p>
+              </div>
+
+              <a href="payments.html"> View Payments → </a>
+            </div>
+
+            <div class="dashboard-payment-list">
+              <div class="dashboard-payment-item">
+                <span>Cash</span>
+                <strong>₦286,500</strong>
+              </div>
+
+              <div class="dashboard-payment-item">
+                <span>Card</span>
+                <strong>₦348,000</strong>
+              </div>
+
+              <div class="dashboard-payment-item">
+                <span>Transfer</span>
+                <strong>₦390,000</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section">
+            <div class="section-header">
+              <div>
+                <h2>Reports</h2>
+                <p>Today's business performance.</p>
+              </div>
+
+              <a href="reports.html"> View Reports → </a>
+            </div>
+
+            <div class="dashboard-report-list">
+              <div class="dashboard-report-item">
+                <span>Orders</span>
+                <strong>78</strong>
+              </div>
+
+              <div class="dashboard-report-item">
+                <span>Avg. Order</span>
+                <strong>₦13,135</strong>
+              </div>
+
+              <div class="dashboard-report-item">
+                <span>Complaints</span>
+                <strong>3</strong>
+              </div>
+
+              <div class="dashboard-report-item">
+                <span>Resolved</span>
+                <strong>2</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section">
+            <div class="section-header">
+              <div>
+                <h2>Settings</h2>
+                <p>Current restaurant system preferences.</p>
+              </div>
+
+              <a href="settings.html"> Manage Settings → </a>
+            </div>
+
+            <div class="dashboard-settings">
+              <div class="dashboard-setting-item">
+                <span>Currency</span>
+                <strong>₦ NGN</strong>
+              </div>
+
+              <div class="dashboard-setting-item">
+                <span>Time Zone</span>
+                <strong>WAT</strong>
+              </div>
+
+              <div class="dashboard-setting-item">
+                <span>Online Orders</span>
+                <span class="setting-active">Enabled</span>
+              </div>
+
+              <div class="dashboard-setting-item">
+                <span>Low Stock Alerts</span>
+                <span class="setting-active">Enabled</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-section dashboard-wide">
+            <div class="section-header">
+              <div>
+                <h2>Customer Complaints</h2>
+                <p>Recent customer feedback that needs attention.</p>
+              </div>
+
+              <a href="reports.html"> View Reports → </a>
+            </div>
+
+            <div class="dashboard-complaints">
+              <div class="dashboard-complaint">
+                <div>
+                  <strong>#1185 • Danielle</strong>
+                  <p>Part of the order arrived later than expected.</p>
+                </div>
+
+                <span class="complaint-status pending"> Pending </span>
+              </div>
+
+              <div class="dashboard-complaint">
+                <div>
+                  <strong>#1171 • Daniel</strong>
+                  <p>Side item was missing from the order.</p>
+                </div>
+
+                <span class="complaint-status resolved"> Resolved </span>
+              </div>
+
+              <div class="dashboard-complaint">
+                <div>
+                  <strong>#1168 • Grace</strong>
+                  <p>Item ordered was incorrect.</p>
+                </div>
+
+                <span class="complaint-status resolved"> Resolved </span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

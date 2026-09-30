@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports | Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="desktop-logo logo">
+          <h1>Restaurant</h1>
+          <p>Management System</p>
+        </div>
+
+        <div class="mobile-sidebar-header">
+          <div class="mobile-logo">
+            <h1>Restaurant</h1>
+            <p>Management System</p>
+          </div>
+
+          <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <span>⌂</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="orders.html">
+                <span>▤</span>
+                Orders
+              </a>
+            </li>
+
+            <li>
+              <a href="tables.html">
+                <span>▦</span>
+                Tables
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>☷</span>
+                Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="inventory.html">
+                <span>▥</span>
+                Inventory
+              </a>
+            </li>
+
+            <li>
+              <a href="staff.html">
+                <span>♙</span>
+                Staff
+              </a>
+            </li>
+
+            <li>
+              <a href="payments.html">
+                <span>₦</span>
+                Payments
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="reports.html">
+                <span>◫</span>
+                Reports
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="settings.html">
+            <span>⚙</span>
+            Settings
+          </a>
+
+          <a href="#">
+            <span>↪</span>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="header-title">
+            <h2>Reports</h2>
+            <p>Monitor restaurant performance and daily activity.</p>
+          </div>
+
+          <div class="header-right">
+            <button class="notification-button">♢</button>
+
+            <div class="admin-profile">
+              <div class="admin-avatar">AD</div>
+
+              <div>
+                <h4>Paul</h4>
+                <p>Administrator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="report-summary">
+          <div class="report-summary-card">
+            <span>Today's Revenue</span>
+            <strong>₦1,024,500</strong>
+            <p>78 orders recorded today</p>
+          </div>
+
+          <div class="report-summary-card">
+            <span>Average Order</span>
+            <strong>₦13,135</strong>
+            <p>Average value per order</p>
+          </div>
+
+          <div class="report-summary-card">
+            <span>Completed Orders</span>
+            <strong>58</strong>
+            <p>74% of today's orders</p>
+          </div>
+
+          <div class="report-summary-card">
+            <span>Customer Complaints</span>
+            <strong>3</strong>
+            <p>1 unresolved complaint</p>
+          </div>
+        </section>
+
+        <section class="report-page">
+          <div class="section-header">
+            <div>
+              <h2>Today's Performance</h2>
+              <p>Overview of restaurant activity for today.</p>
+            </div>
+
+            <div class="report-period">
+              <button class="period-button active">Today</button>
+              <button class="period-button">This Week</button>
+              <button class="period-button">This Month</button>
+            </div>
+            </div>
+
+          <div class="performance-grid">
+            <div class="performance-card">
+              <span>Total Orders</span>
+              <strong>78</strong>
+              <p>34 online • 28 walk-in • 16 delivery</p>
+            </div>
+
+            <div class="performance-card">
+              <span>Revenue</span>
+              <strong>₦1,024,500</strong>
+              <p>From today's completed and active orders</p>
+            </div>
+
+            <div class="performance-card">
+              <span>Occupied Tables</span>
+              <strong>24 / 36</strong>
+              <p>8 available • 4 reserved</p>
+            </div>
+
+            <div class="performance-card">
+              <span>Staff On Duty</span>
+              <strong>14 / 22</strong>
+              <p>6 off duty • 2 on leave</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-page">
+          <div class="section-header">
+            <div>
+              <h2>Order Breakdown</h2>
+              <p>Today's orders by order type.</p>
+            </div>
+          </div>
+
+          <div class="order-report-grid">
+            <div class="order-report-card">
+              <div class="report-icon">↗</div>
+
+              <div>
+                <h3>Online Orders</h3>
+                <p>Orders placed online</p>
+              </div>
+
+              <strong>34</strong>
+            </div>
+
+            <div class="order-report-card">
+              <div class="report-icon">◉</div>
+
+              <div>
+                <h3>Walk-in Orders</h3>
+                <p>Orders placed in restaurant</p>
+              </div>
+
+              <strong>28</strong>
+            </div>
+
+            <div class="order-report-card">
+              <div class="report-icon">▷</div>
+
+              <div>
+                <h3>Delivery Orders</h3>
+                <p>Orders sent for delivery</p>
+              </div>
+
+              <strong>16</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-page">
+          <div class="section-header">
+            <div>
+              <h2>Popular Menu Items</h2>
+              <p>Items with the highest number of orders today.</p>
+            </div>
+          </div>
+
+          <div class="popular-items">
+            <div class="popular-item">
+              <div>
+                <strong>Jollof Rice</strong>
+                <p>32 orders</p>
+              </div>
+
+              <span>₦112,000</span>
+            </div>
+
+            <div class="popular-item">
+              <div>
+                <strong>Grilled Chicken</strong>
+                <p>24 orders</p>
+              </div>
+
+              <span>₦120,000</span>
+            </div>
+
+            <div class="popular-item">
+              <div>
+                <strong>Fried Rice</strong>
+                <p>21 orders</p>
+              </div>
+
+              <span>₦73,500</span>
+            </div>
+
+            <div class="popular-item">
+              <div>
+                <strong>Peppered Chicken</strong>
+                <p>18 orders</p>
+              </div>
+
+              <span>₦81,000</span>
+            </div>
+
+            <div class="popular-item">
+              <div>
+                <strong>French Fries</strong>
+                <p>15 orders</p>
+              </div>
+
+              <span>₦37,500</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="complaints-page">
+          <div class="section-header">
+            <div>
+              <h2>Customer Feedback & Complaints</h2>
+              <p>Review customer issues and track their resolution.</p>
+            </div>
+          </div>
+
+          <div class="complaints-summary">
+            <div>
+              <span>Total</span>
+              <strong>3</strong>
+            </div>
+
+            <div>
+              <span>Resolved</span>
+              <strong>2</strong>
+            </div>
+
+            <div>
+              <span>Pending</span>
+              <strong>1</strong>
+            </div>
+          </div>
+
+          <div class="complaints-list">
+            <div class="complaint-card">
+              <div class="complaint-top">
+                <div>
+                  <strong>Order #1185</strong>
+                  <p>Danielle • Delivery</p>
+                </div>
+
+                <span class="complaint-status pending"> Pending </span>
+              </div>
+
+              <p class="complaint-message">
+                Customer reported that part of the order arrived later than
+                expected.
+              </p>
+
+              <div class="complaint-bottom">
+                <span>Reported today • 10:51 AM</span>
+                <button class="complaint-action">Review</button>
+              </div>
+            </div>
+
+            <div class="complaint-card">
+              <div class="complaint-top">
+                <div>
+                  <strong>Order #1171</strong>
+                  <p>Gary • Walk-in</p>
+                </div>
+
+                <span class="complaint-status resolved"> Resolved </span>
+              </div>
+
+              <p class="complaint-message">
+                Customer reported that a side item was missing from the order.
+              </p>
+
+              <div class="complaint-bottom">
+                <span>Resolved today • 9:24 AM</span>
+                <button class="complaint-action">View</button>
+              </div>
+            </div>
+
+            <div class="complaint-card">
+              <div class="complaint-top">
+                <div>
+                  <strong>Order #1168</strong>
+                  <p>Kylie • Online</p>
+                </div>
+
+                <span class="complaint-status resolved"> Resolved </span>
+              </div>
+
+              <p class="complaint-message">
+                Customer requested a correction to an item that was ordered
+                incorrectly.
+              </p>
+
+              <div class="complaint-bottom">
+                <span>Resolved today • 8:47 AM</span>
+                <button class="complaint-action">View</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="report-page">
+          <div class="section-header">
+            <div>
+              <h2>Inventory Alerts</h2>
+              <p>Items that may require attention.</p>
+            </div>
+
+            <a href="inventory.html"> View Inventory </a>
+          </div>
+
+          <div class="report-alert-grid">
+            <div class="report-alert">
+              <strong>15</strong>
+              <span>Low Stock Items</span>
+            </div>
+
+            <div class="report-alert">
+              <strong>4</strong>
+              <span>Out of Stock</span>
+            </div>
+
+            <div class="report-alert">
+              <strong>6 kg</strong>
+              <span>Cooking Gas Remaining</span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

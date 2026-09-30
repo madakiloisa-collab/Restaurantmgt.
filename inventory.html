@@ -1,0 +1,1296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Inventory | Restaurant Management System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="mobile-sidebar-header">
+          <div class="mobile-logo">
+            <h1>RESTAURANT</h1>
+            <p>Management System</p>
+          </div>
+
+          <button
+            type="button"
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <div class="logo desktop-logo">
+          <h1>RESTAURANT</h1>
+          <p>Management System</p>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <span>▣</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="orders.html">
+                <span>▤</span>
+                Orders
+              </a>
+            </li>
+
+            <li>
+              <a href="tables.html">
+                <span>□</span>
+                Tables
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>☷</span>
+                Menu
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="inventory.html">
+                <span>▥</span>
+                Inventory
+              </a>
+            </li>
+
+            <li>
+              <a href="staff.html">
+                <span>♙</span>
+                Staff
+              </a>
+            </li>
+
+            <li>
+              <a href="payments.html">
+                <span>₦</span>
+                Payments
+              </a>
+            </li>
+
+            <li>
+              <a href="reports.html">
+                <span>▥</span>
+                Reports
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="settings.html">
+            <span>⚙</span>
+            Settings
+          </a>
+
+          <a href="#">
+            <span>↪</span>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="header-title">
+            <h2>Inventory</h2>
+
+            <p>Monitor ingredients, supplies and operational stock.</p>
+          </div>
+
+          <div class="header-right">
+            <button type="button" class="notification-button">🔔</button>
+
+            <div class="admin-profile">
+              <div class="admin-avatar">A</div>
+
+              <div>
+                <h4>Paul</h4>
+
+                <p>Administrator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="inventory-summary">
+          <div class="inventory-summary-card">
+            <span>Total Items</span>
+
+            <strong>64</strong>
+
+            <p>Tracked inventory items</p>
+          </div>
+
+          <div class="inventory-summary-card">
+            <span>In Stock</span>
+
+            <strong>45</strong>
+
+            <p>Healthy stock levels</p>
+          </div>
+
+          <div class="inventory-summary-card">
+            <span>Low Stock</span>
+
+            <strong>15</strong>
+
+            <p>Items need attention</p>
+          </div>
+
+          <div class="inventory-summary-card">
+            <span>Out of Stock</span>
+
+            <strong>4</strong>
+
+            <p>Items currently unavailable</p>
+          </div>
+        </section>
+
+        <section class="inventory-page">
+          <div class="section-header">
+            <div>
+              <h2>Inventory Overview</h2>
+
+              <p>Monitor current quantities and stock levels.</p>
+            </div>
+          </div>
+
+          <div class="inventory-filters">
+            <button class="inventory-filter active">All Items</button>
+
+            <button class="inventory-filter">Food</button>
+
+            <button class="inventory-filter">Proteins</button>
+
+            <button class="inventory-filter">Produce</button>
+
+            <button class="inventory-filter">Drinks</button>
+
+            <button class="inventory-filter">Supplies</button>
+
+            <button class="inventory-filter">Utilities</button>
+          </div>
+
+          <div class="inventory-table-wrapper">
+            <table class="inventory-table">
+              <thead>
+                <tr>
+                  <th>Item</th>
+
+                  <th>Category</th>
+
+                  <th>Quantity</th>
+
+                  <th>Unit</th>
+
+                  <th>Stock Level</th>
+
+                  <th>Last Updated</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Rice</td>
+
+                  <td>Food</td>
+
+                  <td>85</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 8:20 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Chicken</td>
+
+                  <td>Proteins</td>
+
+                  <td>18</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 7:45 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Beef</td>
+
+                  <td>Proteins</td>
+
+                  <td>32</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 8:10 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Fish</td>
+
+                  <td>Proteins</td>
+
+                  <td>24</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 7:55 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Turkey</td>
+
+                  <td>Proteins</td>
+
+                  <td>16</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Tomatoes</td>
+
+                  <td>Produce</td>
+
+                  <td>28</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 8:05 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Onions</td>
+
+                  <td>Produce</td>
+
+                  <td>7</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 7:50 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Pepper</td>
+
+                  <td>Produce</td>
+
+                  <td>15</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 8:00 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Potatoes</td>
+
+                  <td>Produce</td>
+
+                  <td>6</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 7:40 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Plantain</td>
+
+                  <td>Produce</td>
+
+                  <td>4</td>
+
+                  <td>bunches</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 7:35 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Vegetable Oil</td>
+
+                  <td>Food</td>
+
+                  <td>42</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Palm Oil</td>
+
+                  <td>Food</td>
+
+                  <td>26</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Tomato Paste</td>
+
+                  <td>Food</td>
+
+                  <td>8</td>
+
+                  <td>cartons</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 7:30 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Seasoning Cubes</td>
+
+                  <td>Food</td>
+
+                  <td>14</td>
+
+                  <td>packs</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Salt</td>
+
+                  <td>Food</td>
+
+                  <td>12</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Beans</td>
+
+                  <td>Food</td>
+
+                  <td>35</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Flour</td>
+
+                  <td>Food</td>
+
+                  <td>48</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 7:20 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Semolina</td>
+
+                  <td>Food</td>
+
+                  <td>24</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Wheat Flour</td>
+
+                  <td>Food</td>
+
+                  <td>18</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 7:15 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Spaghetti</td>
+
+                  <td>Food</td>
+
+                  <td>26</td>
+
+                  <td>packs</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Macaroni</td>
+
+                  <td>Food</td>
+
+                  <td>18</td>
+
+                  <td>packs</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Coconut Milk</td>
+
+                  <td>Food</td>
+
+                  <td>12</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 7:00 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Eggs</td>
+
+                  <td>Food</td>
+
+                  <td>96</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 6:50 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Mayonnaise</td>
+
+                  <td>Food</td>
+
+                  <td>15</td>
+
+                  <td>jars</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Ketchup</td>
+
+                  <td>Food</td>
+
+                  <td>18</td>
+
+                  <td>bottles</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Cheese</td>
+
+                  <td>Food</td>
+
+                  <td>9</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 7:05 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Pizza Sauce</td>
+
+                  <td>Food</td>
+
+                  <td>14</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Pizza Boxes</td>
+
+                  <td>Packaging</td>
+
+                  <td>120</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 6:40 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Takeaway Packs</td>
+
+                  <td>Packaging</td>
+
+                  <td>180</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 6:35 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Shawarma Wraps</td>
+
+                  <td>Packaging</td>
+
+                  <td>42</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 6:30 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Paper Bags</td>
+
+                  <td>Packaging</td>
+
+                  <td>220</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Food Foil</td>
+
+                  <td>Packaging</td>
+
+                  <td>9</td>
+
+                  <td>rolls</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 6:25 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Coke</td>
+
+                  <td>Drinks</td>
+
+                  <td>96</td>
+
+                  <td>bottles</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 6:20 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Fanta</td>
+
+                  <td>Drinks</td>
+
+                  <td>72</td>
+
+                  <td>bottles</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 6:20 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Sprite</td>
+
+                  <td>Drinks</td>
+
+                  <td>84</td>
+
+                  <td>bottles</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 6:20 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Bottled Water</td>
+
+                  <td>Drinks</td>
+
+                  <td>150</td>
+
+                  <td>bottles</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 6:15 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Fruit Juice</td>
+
+                  <td>Drinks</td>
+
+                  <td>24</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 6:10 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Ice Cream</td>
+
+                  <td>Frozen</td>
+
+                  <td>18</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Vanilla Syrup</td>
+
+                  <td>Drinks</td>
+
+                  <td>7</td>
+
+                  <td>bottles</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Chocolate Syrup</td>
+
+                  <td>Drinks</td>
+
+                  <td>8</td>
+
+                  <td>bottles</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Meat Pie Packs</td>
+
+                  <td>Packaging</td>
+
+                  <td>36</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 6:00 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Cleaning Detergent</td>
+
+                  <td>Cleaning</td>
+
+                  <td>14</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Dishwashing Liquid</td>
+
+                  <td>Cleaning</td>
+
+                  <td>10</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 5:55 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Disinfectant</td>
+
+                  <td>Cleaning</td>
+
+                  <td>12</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Paper Towels</td>
+
+                  <td>Cleaning</td>
+
+                  <td>18</td>
+
+                  <td>packs</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Hand Wash</td>
+
+                  <td>Cleaning</td>
+
+                  <td>8</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 5:50 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Kitchen Gloves</td>
+
+                  <td>Supplies</td>
+
+                  <td>12</td>
+
+                  <td>boxes</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Aluminium Trays</td>
+
+                  <td>Supplies</td>
+
+                  <td>45</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Napkins</td>
+
+                  <td>Supplies</td>
+
+                  <td>320</td>
+
+                  <td>packs</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 5:45 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Plastic Cutlery</td>
+
+                  <td>Supplies</td>
+
+                  <td>160</td>
+
+                  <td>sets</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Cooking Gas</td>
+
+                  <td>Utilities</td>
+
+                  <td>6</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 5:30 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Backup Gas</td>
+
+                  <td>Utilities</td>
+
+                  <td>0</td>
+
+                  <td>kg</td>
+
+                  <td>
+                    <span class="inventory-status out-stock">
+                      Out of Stock
+                    </span>
+                  </td>
+
+                  <td>Today, 5:30 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Generator Fuel</td>
+
+                  <td>Utilities</td>
+
+                  <td>18</td>
+
+                  <td>L</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Today, 5:20 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Printer Paper</td>
+
+                  <td>Supplies</td>
+
+                  <td>8</td>
+
+                  <td>reams</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Receipt Rolls</td>
+
+                  <td>Supplies</td>
+
+                  <td>14</td>
+
+                  <td>rolls</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Food Labels</td>
+
+                  <td>Supplies</td>
+
+                  <td>25</td>
+
+                  <td>packs</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Freezer Bags</td>
+
+                  <td>Packaging</td>
+
+                  <td>11</td>
+
+                  <td>packs</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 5:10 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Ice Packs</td>
+
+                  <td>Supplies</td>
+
+                  <td>0</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status out-stock">
+                      Out of Stock
+                    </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Straws</td>
+
+                  <td>Supplies</td>
+
+                  <td>420</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Cake Boxes</td>
+
+                  <td>Packaging</td>
+
+                  <td>0</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status out-stock">
+                      Out of Stock
+                    </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Pastry Boxes</td>
+
+                  <td>Packaging</td>
+
+                  <td>28</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status low-stock"> Low Stock </span>
+                  </td>
+
+                  <td>Today, 5:00 AM</td>
+                </tr>
+
+                <tr>
+                  <td>Disposable Cups</td>
+
+                  <td>Packaging</td>
+
+                  <td>210</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+
+                <tr>
+                  <td>Freezer Containers</td>
+
+                  <td>Supplies</td>
+
+                  <td>34</td>
+
+                  <td>pieces</td>
+
+                  <td>
+                    <span class="inventory-status in-stock"> In Stock </span>
+                  </td>
+
+                  <td>Yesterday</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="inventory-activity">
+          <div class="section-header">
+            <div>
+              <h2>Recent Stock Activity</h2>
+
+              <p>Latest additions and deductions from inventory.</p>
+            </div>
+          </div>
+
+          <div class="inventory-activity-list">
+            <div class="inventory-activity-item">
+              <div>
+                <strong>Chicken</strong>
+
+                <p>10 kg deducted for today's kitchen production.</p>
+              </div>
+
+              <span> -10 kg </span>
+            </div>
+
+            <div class="inventory-activity-item">
+              <div>
+                <strong>Rice</strong>
+
+                <p>50 kg added to inventory from supplier delivery.</p>
+              </div>
+
+              <span> +50 kg </span>
+            </div>
+
+            <div class="inventory-activity-item">
+              <div>
+                <strong>Coke</strong>
+
+                <p>48 bottles received from beverage supplier.</p>
+              </div>
+
+              <span> +48 </span>
+            </div>
+
+            <div class="inventory-activity-item">
+              <div>
+                <strong>Cooking Gas</strong>
+
+                <p>Current supply has dropped to 6 kg.</p>
+              </div>
+
+              <span> 6 kg </span>
+            </div>
+
+            <div class="inventory-activity-item">
+              <div>
+                <strong>Pizza Boxes</strong>
+
+                <p>40 boxes used for today's pizza orders.</p>
+              </div>
+
+              <span> -40 </span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

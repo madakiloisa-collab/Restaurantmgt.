@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="desktop-logo logo">
+          <h1>RestaurantOS</h1>
+          <p>Management System</p>
+        </div>
+
+        <div class="mobile-sidebar-header">
+          <div class="mobile-logo">
+            <h1>RestaurantOS</h1>
+            <p>Management System</p>
+          </div>
+
+          <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <span>⌂</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="orders.html">
+                <span>▤</span>
+                Orders
+              </a>
+            </li>
+
+            <li>
+              <a href="tables.html">
+                <span>▦</span>
+                Tables
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>☷</span>
+                Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="inventory.html">
+                <span>▥</span>
+                Inventory
+              </a>
+            </li>
+
+            <li>
+              <a href="staff.html">
+                <span>♙</span>
+                Staff
+              </a>
+            </li>
+
+            <li>
+              <a href="payments.html">
+                <span>₦</span>
+                Payments
+              </a>
+            </li>
+
+            <li>
+              <a href="reports.html">
+                <span>◫</span>
+                Reports
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="settings.html" class="active">
+            <span>⚙</span>
+            Settings
+          </a>
+
+          <a href="#">
+            <span>↪</span>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="header-title">
+            <h2>Settings</h2>
+            <p>Manage your restaurant system preferences.</p>
+          </div>
+
+          <div class="header-right">
+            <button
+              class="notification-button"
+              type="button"
+              aria-label="Notifications"
+            >
+              ♢
+            </button>
+
+            <div class="admin-profile">
+              <div class="admin-avatar">AD</div>
+
+              <div>
+                <h4>Admin</h4>
+                <p>Administrator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="settings-page">
+          <!-- Restaurant Information -->
+          <div class="settings-section">
+            <div class="settings-section-header">
+              <h2>Restaurant Information</h2>
+              <p>Basic information about your restaurant.</p>
+            </div>
+
+            <div class="settings-form-grid">
+              <div class="settings-field">
+                <label for="restaurantName">Restaurant Name</label>
+                <input
+                  type="text"
+                  id="restaurantName"
+                  value="RestaurantOS"
+                />
+              </div>
+
+              <div class="settings-field">
+                <label for="phoneNumber">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  value="+234 800 000 0000"
+                />
+              </div>
+
+              <div class="settings-field">
+                <label for="emailAddress">Email Address</label>
+                <input
+                  type="email"
+                  id="emailAddress"
+                  value="restaurant@example.com"
+                />
+              </div>
+
+              <div class="settings-field">
+                <label for="restaurantLocation">Location</label>
+                <input
+                  type="text"
+                  id="restaurantLocation"
+                  value="Nigeria"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Opening Hours -->
+          <div class="settings-section">
+            <div class="settings-section-header">
+              <h2>Opening Hours</h2>
+              <p>Set the restaurant's operating hours.</p>
+            </div>
+
+            <div class="opening-hours">
+              <div class="day-row">
+                <span>Monday</span>
+                <span type="time" value="08:00" />
+                <span class="time-separator">to</span>
+                <span type="time" value="22:00" />
+              </div>
+
+              <div class="day-row">
+                <span>Tuesday</span>
+                <span type="time" value="08:00" />
+                <span class="time-separator">to</span>
+                <span type="time" value="22:00" />
+              </div>
+
+              <div class="day-row">
+                <span>Wednesday</span>
+                <span type="time" value="08:00" />
+                <span class="time-separator">to</span>
+                <span type="time" value="22:00" />
+              </div>
+
+              <div class="day-row">
+                <span>Thursday</span>
+                <span type="time" value="08:00" />
+                <span class="time-separator">to</span>
+                <span type="time" value="22:00" />
+              </div>
+
+              <div class="day-row">
+                <span>Friday</span>
+                <span type="time" value="08:00" />
+                <span class="time-separator">to</span>
+                <span type="time" value="23:00" />
+              </div>
+
+              <div class="day-row">
+                <span>Saturday</span>
+                <span type="time" value="09:00" />
+                <span class="time-separator">to</span>
+                <span type="time" value="23:00" />
+              </div>
+
+              <div class="day-row">
+                <span>Sunday</span>
+                <span type="time" value="10:00" />
+                <span class="time-separator">to</span>
+                <span type="time" value="21:00" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Order Settings -->
+          <div class="settings-section">
+            <div class="settings-section-header">
+              <h2>Order Settings</h2>
+              <p>Control how orders are handled.</p>
+            </div>
+
+            <div class="settings-options">
+              <div class="settings-option">
+                <div>
+                  <h3>Online Orders</h3>
+                  <p>Allow customers to place orders online.</p>
+                </div>
+
+                <label class="toggle">
+                  <span type="checkbox" checked />
+                  <span></span>
+                </label>
+              </div>
+
+              <div class="settings-option">
+                <div>
+                  <h3>Walk-in Orders</h3>
+                  <p>
+                    Allow staff to create orders for restaurant customers.
+                  </p>
+                </div>
+
+                <label class="toggle">
+                  <span type="checkbox" checked />
+                  <span></span>
+                </label>
+              </div>
+
+              <div class="settings-option">
+            s    <div>
+                  <h3>Delivery Orders</h3>
+                  <p>Allow delivery orders to be processed.</p>
+                </div>
+
+                <label class="toggle">
+                  <span type="checkbox" checked />
+                  <span></span>
+                </label>
+              </div>
+
+              <div class="settings-option">
+                <div>
+                  <h3>Low Stock Alerts</h3>
+                  <p>
+                    Notify staff when inventory items reach their threshold.
+                  </p>
+                </div>
+
+                <label class="toggle">
+                  <span type="checkbox" checked />
+                  <span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- System Preferences -->
+          <div class="settings-section">
+            <div class="settings-section-header">
+              <h2>System Preferences</h2>
+              <p>Configure basic system preferences.</p>
+            </div>
+
+            <div class="settings-form-grid">
+              <div class="settings-field">
+                <label for="currency">Currency</label>
+
+                <select id="currency">
+                  <option selected>Nigerian Naira (₦)</option>
+                  <option>US Dollar ($)</option>
+                  <option>British Pound (£)</option>
+                </select>
+              </div>
+
+              <div class="settings-field">
+                <label for="timezone">Time Zone</label>
+
+                <select id="timezone">
+                  <option selected>West Africa Time (WAT)</option>
+                  <option>Greenwich Mean Time (GMT)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Settings Actions -->
+          <div class="settings-actions">
+            <button class="cancel-settings" type="button">
+              Cancel
+            </button>
+
+            <button class="save-settings" type="button">
+              Save Changes
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staff | Restaurant Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="desktop-logo logo">
+          <h1>Restaurant</h1>
+          <p>Management System</p>
+        </div>
+
+        <div class="mobile-sidebar-header">
+          <div class="mobile-logo">
+            <h1>Restaurant</h1>
+            <p>Management System</p>
+          </div>
+
+          <button
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <span>⌂</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li>
+              <a href="orders.html">
+                <span>▤</span>
+                Orders
+              </a>
+            </li>
+
+            <li>
+              <a href="tables.html">
+                <span>▦</span>
+                Tables
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>☷</span>
+                Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="inventory.html">
+                <span>▥</span>
+                Inventory
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="staff.html">
+                <span>♙</span>
+                Staff
+              </a>
+            </li>
+
+            <li>
+              <a href="payments.html">
+                <span>₦</span>
+                Payments
+              </a>
+            </li>
+
+            <li>
+              <a href="reports.html">
+                <span>◫</span>
+                Reports
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="settings.html">
+            <span>⚙</span>
+            Settings
+          </a>
+
+          <a href="#">
+            <span>↪</span>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="top-header">
+          <div class="header-title">
+            <h2>Staff</h2>
+            <p>Manage your restaurant team and staff schedules.</p>
+          </div>
+
+          <div class="header-right">
+            <button class="notification-button">♢</button>
+
+            <div class="admin-profile">
+              <div class="admin-avatar">AD</div>
+
+              <div>
+                <h4>Paul</h4>
+                <p>Administrator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="staff-summary">
+          <div class="staff-summary-card">
+            <span>Total Staff</span>
+            <strong>22</strong>
+            <p>All registered employees</p>
+          </div>
+
+          <div class="staff-summary-card">
+            <span>On Duty</span>
+            <strong>14</strong>
+            <p>Currently working today</p>
+          </div>
+
+          <div class="staff-summary-card">
+            <span>Off Duty</span>
+            <strong>6</strong>
+            <p>Not scheduled today</p>
+          </div>
+
+          <div class="staff-summary-card">
+            <span>On Leave</span>
+            <strong>2</strong>
+            <p>Currently on leave</p>
+          </div>
+        </section>
+
+        <section class="staff-page">
+          <div class="section-header">
+            <div>
+              <h2>All Staff</h2>
+              <p>View and manage restaurant employees.</p>
+            </div>
+
+            <button class="add-staff-button">+ Add Staff</button>
+          </div>
+
+          <div class="staff-filters">
+            <button class="staff-filter active">All Staff</button>
+
+            <button class="staff-filter">Kitchen</button>
+
+            <button class="staff-filter">Service</button>
+
+            <button class="staff-filter">Management</button>
+
+            <button class="staff-filter">Support</button>
+          </div>
+
+          <div class="staff-table-wrapper">
+            <table class="staff-table">
+              <thead>
+                <tr>
+                  <th>Staff</th>
+                  <th>Role</th>
+                  <th>Department</th>
+                  <th>Shift</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">DA</div>
+                      <div>
+                        <strong>Micah Adeyemi</strong>
+                        <span>EMP-001</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Restaurant Manager</td>
+                  <td>Management</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">MO</div>
+                      <div>
+                        <strong>Mercy Okafor</strong>
+                        <span>EMP-002</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Assistant Manager</td>
+                  <td>Management</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">JO</div>
+                      <div>
+                        <strong>Joseph Jacobson</strong>
+                        <span>EMP-003</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Head Chef</td>
+                  <td>Kitchen</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">AA</div>
+                      <div>
+                        <strong>Amarachi Anthony</strong>
+                        <span>EMP-004</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Sous Chef</td>
+                  <td>Kitchen</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">EO</div>
+                      <div>
+                        <strong>Christabel Okoro</strong>
+                        <span>EMP-005</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Line Cook</td>
+                  <td>Kitchen</td>
+                  <td>Evening</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">SA</div>
+                      <div>
+                        <strong>Hafsatu Ahmed</strong>
+                        <span>EMP-006</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Pastry Chef</td>
+                  <td>Kitchen</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">CO</div>
+                      <div>
+                        <strong>Chinedu Kingsley</strong>
+                        <span>EMP-007</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Kitchen Assistant</td>
+                  <td>Kitchen</td>
+                  <td>Evening</td>
+                  <td><span class="staff-status off-duty">Off Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">FA</div>
+                      <div>
+                        <strong>Fatima Abubakar</strong>
+                        <span>EMP-008</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Waiter</td>
+                  <td>Service</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">BM</div>
+                      <div>
+                        <strong>Blessing Osamudiamen</strong>
+                        <span>EMP-009</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Waiter</td>
+                  <td>Service</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">KN</div>
+                      <div>
+                        <strong>Kelechi Nwosu</strong>
+                        <span>EMP-010</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Waiter</td>
+                  <td>Service</td>
+                  <td>Evening</td>
+                  <td><span class="staff-status off-duty">Off Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">GO</div>
+                      <div>
+                        <strong>Daniel Okeke</strong>
+                        <span>EMP-011</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Cashier</td>
+                  <td>Service</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">SO</div>
+                      <div>
+                        <strong>Richard Obi</strong>
+                        <span>EMP-012</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Cashier</td>
+                  <td>Service</td>
+                  <td>Evening</td>
+                  <td><span class="staff-status off-duty">Off Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">TA</div>
+                      <div>
+                        <strong>Tosin Adewale</strong>
+                        <span>EMP-013</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Host</td>
+                  <td>Service</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">EO</div>
+                      <div>
+                        <strong>Bolanle Ojo</strong>
+                        <span>EMP-014</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Waiter</td>
+                  <td>Service</td>
+                  <td>Evening</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">DA</div>
+                      <div>
+                        <strong>Essiet Akpan</strong>
+                        <span>EMP-015</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Delivery Coordinator</td>
+                  <td>Support</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">IM</div>
+                      <div>
+                        <strong>Ibrahim Tanimu</strong>
+                        <span>EMP-016</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Dispatch Rider</td>
+                  <td>Support</td>
+                  <td>Evening</td>
+                  <td><span class="staff-status off-duty">Off Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">CO</div>
+                      <div>
+                        <strong>Clara Fashoro</strong>
+                        <span>EMP-017</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Cleaner</td>
+                  <td>Support</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">PA</div>
+                      <div>
+                        <strong>Peter Aminu</strong>
+                        <span>EMP-018</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Security</td>
+                  <td>Support</td>
+                  <td>Night</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">HO</div>
+                      <div>
+                        <strong>Veronica Davis</strong>
+                        <span>EMP-019</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Accountant</td>
+                  <td>Management</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-leave">On Leave</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">NO</div>
+                      <div>
+                        <strong>Nicole Johnson</strong>
+                        <span>EMP-020</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>HR Officer</td>
+                  <td>Management</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-duty">On Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">SA</div>
+                      <div>
+                        <strong>Stephen Andrew</strong>
+                        <span>EMP-021</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Maintenance</td>
+                  <td>Support</td>
+                  <td>Morning</td>
+                  <td><span class="staff-status on-leave">On Leave</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="staff-member">
+                      <div class="staff-avatar">JO</div>
+                      <div>
+                        <strong>Janet Osei</strong>
+                        <span>EMP-022</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Waiter</td>
+                  <td>Service</td>
+                  <td>Evening</td>
+                  <td><span class="staff-status off-duty">Off Duty</span></td>
+                  <td><button class="staff-action">View</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="staff-shifts">
+          <div class="section-header">
+            <div>
+              <h2>Today's Shifts</h2>
+              <p>Current staff schedule for today.</p>
+            </div>
+          </div>
+
+          <div class="shift-grid">
+            <div class="shift-card">
+              <span>Morning Shift</span>
+              <strong>8 Staff</strong>
+              <p>8:00 AM - 4:00 PM</p>
+            </div>
+
+            <div class="shift-card">
+              <span>Evening Shift</span>
+              <strong>5 Staff</strong>
+              <p>4:00 PM - 12:00 AM</p>
+            </div>
+
+            <div class="shift-card">
+              <span>Night Shift</span>
+              <strong>Security</strong>
+              <p>12:00 AM - 8:00 AM</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

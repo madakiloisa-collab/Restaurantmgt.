@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Orders | Restaurant Management System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+        <div class="mobile-sidebar-header">
+          <div class="mobile-logo">
+            <h1>RESTAURANT</h1>
+            <p>Management System</p>
+          </div>
+
+          <button
+            type="button"
+            class="menu-button"
+            id="menuButton"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+
+        <div class="logo desktop-logo">
+          <h1>RESTAURANT</h1>
+          <p>Management System</p>
+        </div>
+
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="index.html">
+                <span>▣</span>
+                Dashboard
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="orders.html">
+                <span>▤</span>
+                Orders
+              </a>
+            </li>
+
+            <li>
+              <a href="tables.html">
+                <span>□</span>
+                Tables
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html">
+                <span>☷</span>
+                Menu
+              </a>
+            </li>
+
+            <li>
+              <a href="inventory.html">
+                <span>▥</span>
+                Inventory
+              </a>
+            </li>
+
+            <li>
+              <a href="staff.html">
+                <span>♙</span>
+                Staff
+              </a>
+            </li>
+
+            <li>
+              <a href="payments.html">
+                <span>₦</span>
+                Payments
+              </a>
+            </li>
+
+            <li>
+              <a href="reports.html">
+                <span>▥</span>
+                Reports
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="settings.html">
+            <span>⚙</span>
+            Settings
+          </a>
+
+          <a href="#">
+            <span>↪</span>
+            Logout
+          </a>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="main-content">
+        <!-- HEADER -->
+
+        <header class="top-header">
+          <div class="header-title">
+            <h2>Orders</h2>
+
+            <p>View and manage orders received by the restaurant.</p>
+          </div>
+
+          <div class="header-right">
+            <button type="button" class="notification-button">🔔</button>
+
+            <div class="admin-profile">
+              <div class="admin-avatar">A</div>
+
+              <div>
+                <h4>Paul</h4>
+
+                <p>Administrator</p>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- ORDER STATISTICS -->
+
+        <section class="order-page-stats">
+          <div class="small-stat-card">
+            <span> Today's Orders </span>
+
+            <strong> 78 </strong>
+          </div>
+
+          <div class="small-stat-card">
+            <span> Online </span>
+
+            <strong> 34 </strong>
+          </div>
+
+          <div class="small-stat-card">
+            <span> Walk-in </span>
+
+            <strong> 28 </strong>
+          </div>
+
+          <div class="small-stat-card">
+            <span> Delivery </span>
+
+            <strong> 16 </strong>
+          </div>
+        </section>
+
+        <!-- ORDERS -->
+
+        <section class="orders-page">
+          <div class="section-header">
+            <div>
+              <h2>All Orders</h2>
+
+              <p>Orders received today.</p>
+            </div>
+          </div>
+
+          <!-- ORDER FILTERS -->
+
+          <div class="order-actions">
+            <div class="order-tabs">
+              <button class="order-tab active">All Orders</button>
+
+              <button class="order-tab">Online</button>
+
+              <button class="order-tab">Walk-in</button>
+
+              <button class="order-tab">Delivery</button>
+            </div>
+          </div>
+
+          <!-- ORDERS TABLE -->
+
+          <div class="orders-table-wrapper">
+            <table class="orders-table">
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Customer</th>
+                  <th>Type</th>
+                  <th>Items</th>
+                  <th>Table</th>
+                  <th>Amount</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <strong>#1186</strong>
+                  </td>
+
+                  <td>Sammy</td>
+
+                  <td>
+                    <span class="order-type"> Walk-in </span>
+                  </td>
+
+                  <td>Jollof Rice, Grilled Chicken, Coke</td>
+
+                  <td>14</td>
+
+                  <td>₦12,000</td>
+
+                  <td>
+                    <span class="status completed"> Completed </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1185</strong>
+                  </td>
+
+                  <td>Danielle</td>
+
+                  <td>
+                    <span class="order-type"> Delivery </span>
+                  </td>
+
+                  <td>Fried Rice, Peppered Chicken, Fries</td>
+
+                  <td>—</td>
+
+                  <td>₦14,000</td>
+
+                  <td>
+                    <span class="status preparing"> Preparing </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1184</strong>
+                  </td>
+
+                  <td>Jason</td>
+
+                  <td>
+                    <span class="order-type"> Walk-in </span>
+                  </td>
+
+                  <td>Jollof Rice, Beef, Coke, Water</td>
+
+                  <td>08</td>
+
+                  <td>₦11,500</td>
+
+                  <td>
+                    <span class="status completed"> Completed </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1183</strong>
+                  </td>
+
+                  <td>Kirah</td>
+
+                  <td>
+                    <span class="order-type"> Online </span>
+                  </td>
+
+                  <td>Fried Rice, Grilled Chicken, Moi Moi</td>
+
+                  <td>—</td>
+
+                  <td>₦10,500</td>
+
+                  <td>
+                    <span class="status preparing"> Preparing </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1182</strong>
+                  </td>
+
+                  <td>Michel</td>
+
+                  <td>
+                    <span class="order-type"> Walk-in </span>
+                  </td>
+
+                  <td>Jollof Rice, Peppered Chicken, Fanta</td>
+
+                  <td>21</td>
+
+                  <td>₦9,500</td>
+
+                  <td>
+                    <span class="status pending"> Pending </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1181</strong>
+                  </td>
+
+                  <td>Olivia</td>
+
+                  <td>
+                    <span class="order-type"> Delivery </span>
+                  </td>
+
+                  <td>Fried Rice, Beef, Fries, Coke</td>
+
+                  <td>—</td>
+
+                  <td>₦13,000</td>
+
+                  <td>
+                    <span class="status completed"> Completed </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1180</strong>
+                  </td>
+
+                  <td>James</td>
+
+                  <td>
+                    <span class="order-type"> Online </span>
+                  </td>
+
+                  <td>Jollof Rice, Chicken, Water</td>
+
+                  <td>—</td>
+
+                  <td>₦9,500</td>
+
+                  <td>
+                    <span class="status completed"> Completed </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1179</strong>
+                  </td>
+
+                  <td>Lara</td>
+
+                  <td>
+                    <span class="order-type"> Walk-in </span>
+                  </td>
+
+                  <td>Fried Rice, Fish, Coke</td>
+
+                  <td>06</td>
+
+                  <td>₦12,500</td>
+
+                  <td>
+                    <span class="status preparing"> Preparing </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1178</strong>
+                  </td>
+
+                  <td>Nathan</td>
+
+                  <td>
+                    <span class="order-type"> Delivery </span>
+                  </td>
+
+                  <td>Jollof Rice, Beef, Plantain, Fanta</td>
+
+                  <td>—</td>
+
+                  <td>₦13,500</td>
+
+                  <td>
+                    <span class="status completed"> Completed </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1177</strong>
+                  </td>
+
+                  <td>Rebecca</td>
+
+                  <td>
+                    <span class="order-type"> Online </span>
+                  </td>
+
+                  <td>Fried Rice, Grilled Chicken, Coke</td>
+
+                  <td>—</td>
+
+                  <td>₦13,000</td>
+
+                  <td>
+                    <span class="status completed"> Completed </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1176</strong>
+                  </td>
+
+                  <td>Anita</td>
+
+                  <td>
+                    <span class="order-type"> Walk-in </span>
+                  </td>
+
+                  <td>Jollof Rice, Turkey, Fries, Coke</td>
+
+                  <td>12</td>
+
+                  <td>₦15,500</td>
+
+                  <td>
+                    <span class="status pending"> Pending </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <strong>#1175</strong>
+                  </td>
+
+                  <td>Cassidy</td>
+
+                  <td>
+                    <span class="order-type"> Delivery </span>
+                  </td>
+
+                  <td>Fried Rice, Chicken, Moi Moi</td>
+
+                  <td>—</td>
+
+                  <td>₦11,000</td>
+
+                  <td>
+                    <span class="status preparing"> Preparing </span>
+                  </td>
+
+                  <td>
+                    <button class="view-order">View</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ORDER SUMMARY -->
+
+        <section class="order-summary">
+          <div class="section-header">
+            <div>
+              <h2>Order Breakdown</h2>
+
+              <p>Today's orders by order type.</p>
+            </div>
+          </div>
+
+          <div class="order-summary-grid">
+            <div class="order-summary-card">
+              <div class="summary-icon">🌐</div>
+
+              <div class="summary-info">
+                <h3>Online Orders</h3>
+
+                <p>Orders placed online</p>
+              </div>
+
+              <strong> 34 </strong>
+            </div>
+
+            <div class="order-summary-card">
+              <div class="summary-icon">👤</div>
+
+              <div class="summary-info">
+                <h3>Walk-in Orders</h3>
+
+                <p>Orders placed at the restaurant</p>
+              </div>
+
+              <strong> 28 </strong>
+            </div>
+
+            <div class="order-summary-card">
+              <div class="summary-icon">🛵</div>
+
+              <div class="summary-info">
+                <h3>Delivery Orders</h3>
+
+                <p>Orders sent for delivery</p>
+              </div>
+
+              <strong> 16 </strong>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
